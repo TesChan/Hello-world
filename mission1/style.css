@@ -1,14 +1,6 @@
-/*@media only screen and (max-width: 480px){
-           html {
-               font-size: 79%!important;
-           }
-           .elements{
-               height:70px!important;
-           }
-       }*/
-
-body{
+*{
     margin:0;
+    padding:0;
 }
 
 html {
@@ -17,15 +9,14 @@ html {
 
 .wrap{
     padding:3% 0 0 3%;
-    overflow: hidden;
 }
 
 .elements{
     width:30%;
     padding: 0 0 30% 0;
-    background-color: chocolate;
+    background-color: orange;
     border-radius: 10px;
-    float: right;
+    float: left;
     margin:0 3% 3% 0;
 }
 

@@ -1,22 +1,32 @@
+/*@media only screen and (max-width: 480px){
+           html {
+               font-size: 79%!important;
+           }
+           .elements{
+               height:70px!important;
+           }
+       }*/
+
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 62.5%;
 }
 
-.wrap{
-    padding:3% 0 0 3%;
-}
-
 .elements{
-    width:30%;
-    padding: 0 0 30% 0;
+    width:32%;
+    padding: 0 0 32% 0;
     background-color: orange;
     border-radius: 10px;
     float: left;
-    margin:0 3% 3% 0;
+    margin:0 2% 2% 0;
 }
+
+.wrap .last{
+    margin: 0;
+}
+
 

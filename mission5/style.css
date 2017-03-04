@@ -1,0 +1,184 @@
+
+/*--header--*/
+.header{
+    position: fixed;
+    overflow: hidden;
+    left:0;
+    top:0;
+    width:100%;
+    height:5rem;
+    background-color: #5FBFCC;
+    z-index:999;
+}
+
+.header span{
+    color: #FFFFFF;
+    height:5rem;
+    line-height: 5rem;
+    position: absolute;
+    left:2rem;
+    font-size: 4rem;
+}
+
+.header h3{
+    color: #FFFFFF;
+    height:5rem;
+    line-height:5rem;
+    width:100%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*--main--*/
+
+/*info-picture-area*/
+.person-info{
+    width:100%;
+    margin:5rem 0 0 0;
+    padding: 10% 0;
+    background: url("images/bg.png");
+    background-size: cover;
+    overflow: auto;
+}
+
+.person-info .pic{
+    float: left;
+    margin: 0 3%;
+    width: 8rem;
+    height:8rem;
+    background:white url(images/icon-lady.png) bottom center /70% no-repeat;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.person-info .name{
+    float: left;
+    width:60%;
+    color: #FFFFFF;
+    margin:0 0 0 5%;
+}
+
+.person-info .name p {
+    margin: 6% 0;
+}
+.locate{
+    font-size: 2.5rem;
+}
+
+/*info-lists*/
+.detail-info{
+    width:100%;
+    border-bottom:1px solid #e1e5e7;
+    margin:0 0 40% 0;
+}
+
+.detail-info .skills{
+    width:100%;
+    padding:2rem 0;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.detail-info .skills span{
+    margin-left: 3rem;
+    padding:0 1rem;
+    font-weight: 600;
+    border-left: 3px solid #5FBFCC;
+}
+
+ .list {
+    margin-left: 5%;
+}
+
+ .list li {
+    padding: 5%;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+ .list li img {
+    margin-right: 10px;
+}
+
+ .list li span.property {
+    margin-right: 5%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e5e7;
+}
+
+.list li span.detail {
+    margin-right: 3%;
+    padding-right: 3%;
+    color: #999;
+    border-right: 1px solid #e1e5e7;
+}
+
+.list li span.price {
+    color: red;
+}
+
+.self-intro{
+    border-style: none;
+}
+
+.detail-exp{
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    font-size: 3rem;
+}
+
+/*--footer--*/
+.footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding:4%;
+    width:100%;
+    height:60px;
+    line-height: 60px;
+    background: #FFFFFF;
+    z-index: 10;
+}
+
+.footer .comment, .footer .call{
+    float: left;
+    width:43%;
+    height:60px;
+    border-radius: 10px;
+    border:3px solid #5FBFCC;
+    text-align: center;
+}
+
+.footer .comment{
+    margin:0 2% 0 0;
+}
+
+.footer .comment:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer .call{
+    margin:0 0 0 2%;
+    background-color: #5FBFCC;
+    cursor: pointer;
+}
+
+.footer .call:hover{
+    opacity:0.7;
+}
+.footer .comment a{
+    font-size: 4rem;
+    color: #5FBFCC;
+    text-decoration: none;
+}
+
+.footer .call a{
+    font-size: 4rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+

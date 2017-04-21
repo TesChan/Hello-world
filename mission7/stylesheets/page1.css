@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    width:100%;
+    height:100%;
+}
+
+body {
+    width:100%;
+    min-width: 280px;
+    font-family: "宋体", sans-serif;
+    height:100%;
+}
+.wrapper{
+    width:100%;
+    height:100%;
+    background-color: #F0F0F0;
+}
+
+/*头部start--------------------------------*/
+.heading{
+    position: relative;
+    width:100%;
+    height:11%;
+}
+
+.heading img{ /*头部左边选项符号*/
+    position:absolute;
+    width:2.5rem;
+    height:2rem;
+    left:15px;
+    bottom:15px;
+}
+/*-------------------------------------头部end*/
+/*主体部分start--------------------------------*/
+
+
+.reminder-box{  /*上轮游戏提示框*/
+    position: relative;
+    margin:5% auto;
+    height:10.5%;
+    width:90%;
+    background-color: #ffffff;
+    border:1px solid #CDCDCD;
+    padding: 5%;
+}
+
+.reminder-box p{    /*上轮游戏提示文字*/
+    white-space: nowrap;
+    font-size: 2rem;
+    color: #9F9F9F;
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+}
+
+.reminder-box span{ /*前进符号>*/
+    font-size: 3rem;
+    position: absolute;
+    top:50%;
+    right:0;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity:0.3;
+    color: #9F9F9F;
+    cursor: pointer;
+}
+/*-------------------------------------- reminder-box end*/
+/*options-box start--------------------------------------*/
+
+.options-box{ /*游戏选项区域*/
+    width:90%;
+    height:68%;
+    background: #FFFFFf;
+    text-align: center;
+    border:1px solid #CDCDCD;
+}
+
+/*-----------------------------*/
+
+.options-box .h3-box{   /**/
+    border-bottom:2px solid #FBB435;
+}
+.options-box h3{
+    font-size: 2rem;
+    color: #FBB435;
+    margin:5% auto;
+}
+
+/*----------------------------*/
+.options-box .version-wrap{
+    height:90%;
+}
+
+.options-box .version-block{ /*游戏版本按钮区域*/
+    position: relative;
+    width:100%;
+    height:21%;
+    margin:5% auto;
+}
+
+
+
+.options-box .version-btn{ /*游戏版本按钮*/
+    position: relative;
+    display: block;
+    width:80.5%;
+    height:80%;
+    background-color:#69D1E9;
+    margin:4% auto;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height:400%;
+    cursor: pointer;
+}
+
+.options-box .version-block .right-index{   /*橙色前进符号*/
+    font-size: 3rem;
+    color: #FBB435;
+    top:45%;
+    position: absolute;
+    right:0;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+}
+
+.options-box .version-btn p{ /*游戏版本按钮字体*/
+    position: absolute;
+    font-size: 2rem;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.options-box .version-block span{   /*正在玩的人数*/
+    margin-top: -.5rem;
+    display: block;
+    color: #9F9F9F;
+}
+
+/*-------------------------------*/
+
+.page-index{ /*下方小圆点区域*/
+    margin:6% auto;
+    padding:2% auto;
+}
+
+.page-index ul{
+    margin: 0 auto;
+}
+.page-index .index-btn{ /*下方四小圆点*/
+    display: inline-block;
+    list-style: none;
+    margin:0 auto 2% auto;
+    width:1rem;
+    height:1rem;
+    border-radius: 100%;
+    background-color: #E7E7E7;
+    cursor: pointer;
+}
+
+.page-index .index-btn:hover{   /*四小圆点hover效果*/
+    background-color: #FBB435;
+}

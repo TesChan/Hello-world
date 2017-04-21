@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    width:100%;
+    height:100%;
+    background: #29BDE0;
+}
+
+body {
+    width:100%;
+    min-width: 280px;
+    font-family:"宋体";
+    height:100%;
+}
+
+/*header start----------------------------------------------*/
+.header{
+    display: flex;
+    width:100%;
+    height:11.5%;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+.header .home-btn{  /*home-btn*/
+    position: absolute;
+    width:8.7%;
+    height:31%;
+    bottom:17%;
+    left:3%;
+}
+
+.header .title{ /*页面主题*/
+    color: #fff;
+    font-size: 2rem;
+    margin:10% auto 0 auto;
+}
+
+.header .info-btn{  /*information*/
+    position: absolute;
+    width:6.5%;
+    height:31%;
+    bottom:17%;
+    right:3%;
+}
+
+
+/*-------------------------------------------------header end*/
+
+
+/*result-box start------------------------------------------*/
+
+.result-box{
+    width:100%;
+    height:54.5%;
+    background: #29BDE0;
+    margin-top: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*game-detail box start-------------------------------------*/
+.result-box img{    /*结果Logo*/
+    margin:3.5% auto;
+    width: 55%;
+    height:33%;
+}
+
+.result-box .result-explanation {   /*成就解析*/
+    margin:0 auto;
+    width:75%;
+    height:17.7%;
+    color: #FEC866;
+    font-size: 1.8rem;
+    text-align:justify;
+}
+
+.result-box .detail-box1{
+    margin:9.5% auto;
+    width:75%;
+    height:17.7%;
+    color: rgba(255,255,255,0.8);
+    font-size: 1.5rem;
+    text-align:justify;
+    font-weight: 200;
+}
+
+.detail-box1 p{
+    margin:0 auto;
+}
+
+.detail-box1 ul{
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.detail-box1 ul li{
+    float: left;
+    margin-right: 7.8%;
+}
+
+.detail-box1 span{
+    display: block;
+}
+
+/*detail-box2 start----------------------------------------*/
+.detail-box2 {  /*每天细节记录区域*/
+    display: flex;
+    flex-direction: column;
+}
+
+.details{   /*当天细节记录框*/
+    width:100%;
+    border-top: 1px solid #E1E1E1;
+    height:14.6%;
+    text-indent: 12.2%;
+    position: relative;
+}
+
+.details p{
+    color:#CBCBCB;
+}
+
+/*footer start---------------------------------------------*/
+.footer{
+    width:100%;
+    height:11.5%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background-color: rgba(41,189,224,0.4);
+    z-index:10;
+}
+
+.footer .footer-item{
+    margin-top:3.5%;
+    width:42.5%;
+    height:65.4%;
+    border-radius: 10px;
+    display: flex;
+}
+
+.footer .again{
+    background-color: #F66F6F;
+}
+
+.footer .share{
+    background-color: #FBB435;
+}
+
+.footer .footer-item a{
+    color: #fff;
+    margin:auto;
+    font-size: 2.3rem;
+}

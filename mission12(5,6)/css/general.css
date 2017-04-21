@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    width:100%;
+}
+
+body {
+    width:100%;
+    font-family: "宋体";
+    min-width:275px;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 38%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 90%;
+    }
+}

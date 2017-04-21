@@ -1,0 +1,253 @@
+html,body{
+    width: 100%;
+    font-size: 62.5%;
+    background-color: #FAFAFA;
+    font-family: "微软雅黑","宋体",sans-serif;
+}
+
+/*main section start------------------------------------*/
+
+
+
+
+/*catalog-box start*/
+
+/*catalog*/
+.catalog{
+    width:120rem;
+    height:8rem;
+    line-height:8rem;
+    margin:0 auto;
+    padding:3rem auto;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.catalog li{
+    float: left;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+/*direction*/
+.direction{
+    width:120rem;
+    margin:0 auto;
+    padding:3rem auto;
+    height:8rem;
+    line-height:8rem;
+    padding:3rem auto;
+    border-bottom: 1px solid #EDF1F2;
+}
+
+.direction li{
+    float: left;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.direction li a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+.direction .active a{
+    padding:.5rem;
+    background: #1DB176;
+    color: white;
+}
+
+
+
+
+/*section details------------------------------------------*/
+.job-detail{
+    width:120rem;
+    margin:0 auto 5rem auto;
+}
+.job-detail .title{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height:8rem;
+    line-height:8rem;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/*job-containers -------------------------------------------*/
+
+
+.job-containers{
+    margin:2.5rem 2.5rem 0 0;
+    width:37rem;
+    display: inline-block;
+    border: 1px solid #EDF1F2;
+    position: relative;
+}
+
+.job-containers .line1 {    /*line1*/
+    padding:2rem 1rem 1.6rem;
+    border-bottom: 1px solid #CCCCCC;
+    vertical-align: middle;
+    max-width:100%;
+    overflow: hidden;
+}
+.line1 img{
+    float: left;
+    margin-right: 1rem;
+}
+
+.job-containers .line1 h4{
+    margin:0;
+    font-size: 1.6rem;
+    padding:10px 0;
+    display: inline-block;
+    border-bottom: none;
+    font-weight:bold;
+}
+
+.job-containers .line1 p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    text-align:left;
+    margin-top: 1rem;
+
+}
+
+.job-containers .line2{ /*line2*/
+    overflow: hidden;
+}
+
+.line2 ul li{
+    float: left;
+    width: 50%;
+    padding:1rem .5rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+    color: #999999;
+}
+
+.threshold{
+    border-right: 1px solid #edf1f2;
+}
+.job-containers .line3{ /*line3*/
+    overflow: hidden;
+}
+
+.line3 ul li{
+    float: left;
+    width:50%;
+    padding:1rem .5rem;
+    border-bottom: 1px solid #edf1f2;
+    color: #999999;
+}
+
+.line3 ul li strong{
+    color: red;
+    font-weight: 600;
+}
+
+.job-containers .line4{ /*line4*/
+    overflow: hidden;
+}
+
+.line4 .salaries{
+    float: left;
+    display: flex;
+    border-right: 1px solid #edf1f2;
+    border-bottom: 1px solid #edf1f2;
+    width:45%;
+    height:12.2rem;
+}
+
+.line4 .salaries p{
+    margin:auto;
+    color: #999999;
+}
+
+.line4 ul{
+    float: left;
+    width:55%;
+}
+
+.line4 ul li{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.line4 ul li p{
+    margin:0;
+    padding:10px;
+}
+
+.line4 ul li p i{
+    float: right;
+}
+.job-containers .line5{ /*line5*/
+    overflow: hidden;
+}
+
+.line5 p{
+    width:100%;
+    border-bottom: 1px solid #edf1f2;
+    padding:10px;
+    margin:0;
+    font-weight: bold;
+}
+
+.line5 p i{
+    color: red;
+
+}
+
+.job-containers .line6{ /*line5*/
+    overflow: hidden;
+}
+
+.line6 p{
+    margin:0;
+    padding:10px;
+    color: #999999;
+    font-size: 1.3rem;
+}
+
+.behind{    /*behind*/
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+    padding:2rem 4rem;
+    transform: scaleX(0);
+    -webkit-transition:all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    backface-visibility: hidden;
+    background: rgba(0,0,0,0.9);
+}
+
+
+.behind-content .title{
+    color: #ffffff;
+    border-bottom: none;
+    font-weight:bold;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.behind-content .main{
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+.job-containers:hover .behind{  /*打开*/
+    backface-visibility: visible;
+    transform:scaleX(1);
+}

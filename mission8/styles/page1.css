@@ -1,0 +1,275 @@
+html,body{
+    width: 100%;
+    font-size: 62.5%;
+    background-color: #FAFAFA;
+    font-family: "微软雅黑","宋体",sans-serif;
+}
+
+/*main start--------------------------------------------*/
+.banner-pics{
+    width:100%;
+}
+
+.carousel-inner .item img{
+    width: 100%;
+    height: 60rem;
+}
+
+.content{
+    width:100%;
+    height:100%;
+    background-color: #FAFAFA;
+}
+
+.features-box{  /*features sections start*/
+    width: 120rem;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.features-box.features{
+    overflow: hidden;
+
+}
+
+.features div{  /*feature-box1*/
+    margin:5rem auto 2rem auto;
+}
+.features h4{   /*feature-box2*/
+    text-align: center;
+    font-weight: 600;
+}
+
+.features p{   /*feature-box3*/
+    display: block;
+    margin:3rem auto;
+    width:20rem;
+    text-align: justify;
+    color: gray;
+}
+
+.features.num-count{    /*feature-box4*/
+    margin-top: 5rem;
+    border-left: 1px dashed #CCCCCC;
+    padding-left: 3rem;
+    color: gray;
+}
+
+.features.num-count span{    /*feature-box4*/
+    color:#1DB176;
+}
+
+.features div ul{
+    margin:3rem;
+}
+
+.methods-box{    /*method section start*/
+    width:120rem;
+    margin:5rem auto;
+    overflow: hidden;
+}
+
+.methods-box h4{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+
+.methods-rows{
+    margin:5rem auto;
+    width:100%;
+}
+
+.methods-rows li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.circle{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width:70px;
+    height:70px;
+    line-height: 70px;
+    margin-right: 1.5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #1DB176;
+    box-shadow: 1px 1px 1px #cccccc;
+}
+
+.methods-rows p{
+    vertical-align: middle;
+    width: 150px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.methods-rows img{
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+/*
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    color: #29b078;
+    background: #fff;
+    border-radius: 35px;
+    box-shadow: 1px 1px 1px #e6e6e6;
+*/
+
+.arrow{
+    
+}
+
+.methods-box p{
+    display: inline-block;
+    text-align: justify;
+}
+
+
+.elites-box{    /*elites section start*/
+    width: 120rem;
+    margin:2rem auto 0 auto;
+    overflow: hidden;
+}
+
+.elites-title{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.elites-box .elites-wrap{
+    overflow: hidden;
+}
+.elites{
+    width: 26rem;
+    height:37rem;
+    background: #fff;
+    box-shadow: 0 0 1PX #CCC;
+    margin:0 2rem;
+    float: left;
+    padding:2rem;
+    border-radius: 2px;
+}
+
+.elites a{
+    display: block;
+    width:11rem;
+    height:10.6rem;
+    margin:0 auto;
+}
+
+.elites h4{
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.elites p{
+    font-size: 1.5rem;
+    color:gray;
+}
+
+.elites-box ul{
+    margin:2% auto;
+    width:8rem;
+    height:1.3rem;
+    overflow: hidden;
+}
+
+.elites-box ul li{
+    float: left;
+    width:1.3rem;
+    height:1.3rem;
+    border:1px solid #ccc;
+    border-radius: 100%;
+    margin:0 .2rem;
+    cursor: pointer;
+}
+
+.elites-box ul li:hover{
+    background-color: #1DB176;
+    
+}
+
+
+.cooperate{ /*cooperate section start*/
+    margin:10rem auto;
+    width:120rem;
+    height:22.5rem;
+    overflow: hidden;
+}
+
+.cooperate-title{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+}
+.cooperate div{
+    display:flex;
+    float: left;
+    width:24rem;
+    height:17.5rem;
+    background: #fff;
+    cursor: pointer;
+}
+
+.cooperate div:hover{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.cooperate a{
+    margin:auto;
+}
+
+
+/*footer start---------------------------------------------*/
+.links-box{
+    margin:0 auto;
+    width:120rem;
+    height:12rem;
+    padding:5px auto;
+    background: #fff;
+}
+
+.links-box p{
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+.links-box ul{
+    margin:0 auto;
+    height:3rem;
+}
+
+.links-box ul li{
+     list-style: disc;
+     width:12rem;
+     height:3rem;
+     line-height: 3rem;
+     float: left;
+     color: gray;
+}
+.links-box ul li a{
+
+    color: gray;
+}
+
+

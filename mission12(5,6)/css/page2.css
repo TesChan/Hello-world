@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*
+*
+*CONTENTS
+*
+*
+*SETTINGS
+*variables..................................变量集中储存文件
+*mixin.....................................mixin集中存储文件
+*
+*TOOLS
+*
+*
+*COMPONENTS
+*reset......................................Compass内置浏览器重置样式文件
+*
+*BUSINESS
+*
+*
+*BASE
+*screen.scss................................针对当前站点主页的样式修饰
+*
+*
+*
+*/
+html, body {
+  height: 100%;
+}
+
+/*header*/
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #5FBFCC;
+  padding: .4rem;
+}
+.header .btn-group {
+  width: 40%;
+  height: 35px;
+  margin: 15px auto 0;
+}
+.header .btn-group .btn {
+  display: inline-block;
+  width: 50%;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  background: #55A7B2;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.header .btn-group .btn input {
+  visibility: hidden;
+  width: 2px;
+}
+.header .btn-group .btn:first-child {
+  margin-right: -8px;
+}
+.header .btn-group .active {
+  background: #FFFFFF;
+  color: #5FBFCC;
+}
+.header a {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  text-align: center;
+}
+.header a .symbol-location {
+  width: 50%;
+}
+
+/*nav*/
+.nav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+.nav .nav-item {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #e1e5e7;
+}
+.nav .nav-item div {
+  float: left;
+  position: relative;
+  width: 33.33%;
+  height: 100%;
+  line-height: 50px;
+  border-right: 1px solid #e1e5e7;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #999;
+}
+.nav .nav-item div::after {
+  content: '';
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  -webkit-transform: translate(0, -30%);
+  -moz-transform: translate(0, -30%);
+  -ms-transform: translate(0, -30%);
+  -o-transform: translate(0, -30%);
+  transform: translate(0, -30%);
+  border: 6px solid transparent;
+  border-top-color: #999;
+}
+.nav .nav-item div:last-child {
+  border: none;
+}
+
+/*main*/
+.details {
+  margin-top: 110px;
+  width: 100%;
+  height: 100%;
+}
+.details .details-content {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid #e1e5e7;
+  padding: 3%;
+}
+.details .details-content .date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.details .details-content .date img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.details .details-content .date span {
+  margin-left: .8rem;
+  font-size: 2.5rem;
+  color: #999;
+}
+.details .details-content .location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.details .details-content .location img {
+  width: 1.5rem;
+  height: 1.8rem;
+}
+.details .details-content .location span {
+  margin-left: .8rem;
+  font-size: 2.5rem;
+  color: #999;
+}
+.details .details-content .duration {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.details .details-content .duration span {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.details .details-content .duration span:last-child {
+  color: red;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.details .details-content .duration span:last-child::after {
+  content: '';
+  display: inline-block;
+  border-top: 2px solid #5FBFCC;
+  border-right: 2px solid #5FBFCC;
+  width: 1rem;
+  height: 1rem;
+  margin-left: .5rem;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*footer*/
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: #F7F9FA;
+  padding: 4px;
+}
+.footer div {
+  display: flex;
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  flex-direction: column;
+}
+.footer .home {
+  /*left-symbol*/
+  text-align: right;
+  align-items: flex-end;
+}
+.footer .home div {
+  display: flex;
+  width: 30px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .home div img {
+  width: 25px;
+  height: 25px;
+}
+.footer .home div p {
+  text-align: center;
+  color: #5FBFCC;
+}
+.footer .mark {
+  /*mark-symbol*/
+  text-align: center;
+}
+.footer .mark span {
+  display: inline-block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #5FBFCC;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.footer .mark span img {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.footer .mine {
+  /*mine-symbol*/
+  align-items: flex-start;
+}
+.footer .mine div {
+  display: flex;
+  width: 30px;
+  height: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .mine div img {
+  width: 22px;
+  height: 22px;
+}
+.footer .mine div p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=page2.css.map */

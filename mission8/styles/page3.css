@@ -1,0 +1,135 @@
+/*banner section start-------------------*/
+.banner{
+    overflow: hidden;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+/*main section start ------------------------*/
+
+.catalog{   /*catalog*/
+    overflow: hidden;
+    width:120rem;
+    margin:0 auto;
+    padding:2rem 0;
+}
+
+.catalog li{
+    float: left;
+    margin-right: .5rem;
+}
+
+.catalog li a{
+    float: left;
+    margin-right: 2rem;
+    color: #1DB176;
+}
+
+.content{   /*content section start*/
+    width:120rem;
+    margin:0 auto 5rem auto;
+    overflow: hidden;
+
+}
+
+.content .nav-bar{  /*导航栏start*/
+    float: left;
+    overflow: hidden;
+    width:22%;
+    border:1px solid #EDF1F2;
+    text-align: center;
+}
+
+.nav-bar .title{
+    display: block;
+    height:5rem;
+    line-height:5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #EDF1F2;
+}
+
+.nav-bar ul{
+    overflow: hidden;
+    width:8rem;
+    margin:2rem auto;
+}
+.nav-bar ul li{ /**/
+    overflow: hidden;
+    height:5rem;
+    line-height:5rem;
+    display: flex;
+    text-align: left;
+}
+
+.nav-bar ul li div{
+    float: left;
+    overflow: hidden;
+}
+.nav-bar ul li a{
+    margin:0 auto;
+    color: #1DB176;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.nav-bar ul li .indicator{
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    border-radius:100%;
+    border:1.2px solid orange;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.active{
+   background-color: orange;
+}
+
+.content .organization{
+    float: right;
+    overflow: hidden;
+    width:75%;
+    border:1px solid #EDF1F2;
+}
+
+.organization .brief{   /*企业简介部分*/
+    width:100%;
+    overflow: hidden;
+    padding:2.5rem;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.organization .brief .logo{
+    display: flex;
+    float: left;
+    height:10rem;
+    padding:2rem 5rem;
+}
+
+.brief .logo img{
+    margin:auto;
+}
+
+.organization .brief p{
+    width:70%;
+    float: right;
+    color: #999999;
+    margin-right: 2rem;
+    text-align: justify;
+}
+
+.organization .details{ /*企业detail部分*/
+    padding:4rem 5rem;
+}
+
+.organization .details p{
+    text-indent:4rem;
+    color: #999999;
+    text-align: justify;
+}
+

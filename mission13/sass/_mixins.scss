@@ -1,0 +1,16 @@
+//position-related
+@mixin absolutePosition($top:50%,$right:0,$bottom:0,$left:50%){
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+//type of indexes
+

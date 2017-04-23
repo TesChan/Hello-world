@@ -107,11 +107,11 @@ html, body {
   position: absolute;
   right: 8%;
   top: 50%;
-  -webkit-transform: translate(0, -30%);
-  -moz-transform: translate(0, -30%);
-  -ms-transform: translate(0, -30%);
-  -o-transform: translate(0, -30%);
-  transform: translate(0, -30%);
+  -webkit-transform: translate3d(0, -30%, 0);
+  -moz-transform: translate3d(0, -30%, 0);
+  -ms-transform: translate3d(0, -30%, 0);
+  -o-transform: translate3d(0, -30%, 0);
+  transform: translate3d(0, -30%, 0);
   border: 6px solid transparent;
   border-top-color: #999;
 }
@@ -121,7 +121,7 @@ html, body {
 
 /*main*/
 .details {
-  margin-top: 110px;
+  margin: 110px auto 60px auto;
   width: 100%;
   height: 100%;
 }
@@ -248,11 +248,11 @@ html, body {
   left: 53%;
   width: 25px;
   height: 25px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 .footer .mine {
   /*mine-symbol*/

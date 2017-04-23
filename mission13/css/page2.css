@@ -3,156 +3,165 @@ html {
   font-size: 62.5%;
   width: 100%;
   height: 100%;
-  background: #29BDE0; }
+  background: #29BCDF;
+}
 
 body {
   width: 100%;
   min-width: 280px;
-  font-family: "宋体";
-  height: 100%; }
+  height: 100%;
+}
 
 /*-----------------------------*/
 .wrap {
   width: 100%;
   height: 100%;
-  background-color: #29BDE0; }
+  background-color: #29BCDF;
+}
 
-.wrap .top {
-  /*heading fixed 区域*/
+/*heading fixed 区域-----------------------------------*/
+.top {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 18.5%;
-  z-index: 10; }
-
-/*header start--------------------------------------*/
-.header {
-  /*页头区域*/
+  z-index: 10;
+}
+.top .header {
+  /*header start-*/
   position: relative;
   width: 100%;
   height: 61%;
-  background-color: #29BDE0; }
-
-.header .options-btn {
+  background-color: #29BCDF;
+}
+.top .header .options-btn {
   /*选项按钮*/
   position: absolute;
   left: 5%;
   top: 70%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
   width: 2.5rem;
   height: 2.5rem;
-  cursor: pointer; }
-
-.header .title {
+  cursor: pointer;
+}
+.top .header .title {
   /*页头标题*/
   position: absolute;
   left: 50%;
   top: 70%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   color: #FFFFFF;
-  font-size: 2.5rem; }
-
-.header .close {
+  font-size: 2.5rem;
+}
+.top .header .close {
   /*页头关闭按钮*/
   position: absolute;
   right: 3%;
   top: 70%;
-  -webkit-transform: translate(0, -50%);
-  -moz-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  -o-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  -ms-transform: translate3d(0, -50%, 0);
+  -o-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
   width: 2.5rem;
   height: 2.5rem;
-  cursor: pointer; }
-
-.header .close img {
-  color: #FFFFFf; }
-
-/*info section start----------------------------------*/
-.info-box {
+  cursor: pointer;
+}
+.top .header .close img {
+  color: #FFFFFf;
+}
+.top .info-box {
+  /*info section start----*/
   position: relative;
   display: flex;
   width: 100%;
   height: 39%;
   background-color: #B9E9F5;
-  z-index: 10; }
-
-.info-box p {
+  z-index: 10;
+}
+.top .info-box p {
   /*信息栏文字*/
-  width: auto;
+  margin: auto 5%;
   font-size: 1.6rem;
-  margin: auto 5%; }
-
-.info-box a {
+}
+.top .info-box a {
   /**/
   position: absolute;
   width: 3.5rem;
   height: 3.5rem;
   right: 0;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor: pointer; }
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  cursor: pointer;
+}
 
 /*voting block start------------------------------------*/
 .vote-container {
   /*投票区域*/
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 18.5%;
-  height: 65%;
-  padding: 0 0.8%; }
-
+  margin: 30% auto 70% auto;
+  height: 100%;
+  padding: 1rem;
+}
 .vote-container p {
   /*投票区提示语*/
   color: #FFFFFf;
-  margin: 3.6% 11.25% 0 11.25%; }
-
+  margin: 3.6% 11.25% 0 11.25%;
+  font-size: 1.6rem;
+}
 .vote-container ul {
   margin-top: 2.5%;
-  height: 100%; }
+  height: 100%;
+}
+.vote-container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 .vote-container .vote-box {
   /*具体玩家投票区*/
-  width: 21.5%;
-  height: 25.5%;
+  width: 22%;
+  height: 18%;
   float: left;
-  margin: 2% 5.5%; }
-
-.vote-box .vote-outer {
+  margin: 2% 5.5% .5% 5.5%;
+}
+.vote-container .vote-box:hover .actions {
+  visibility: visible;
+}
+.vote-container .vote-box:hover .actions:not(:first-child) {
+  margin-left: 4.6%;
+}
+.vote-container .vote-box .vote-outer {
   display: block;
   width: 100%;
   height: 72.2%;
   background-color: #FFFFFf;
   padding: 4%;
-  cursor: pointer; }
-
-.vote-box div {
-  display: flex;
-  float: left;
-  height: 75%;
-  width: 100%;
-  background-color: #F5C97B; }
-
-.vote-box .vote-outer div p {
+  cursor: pointer;
+  z-index: 90;
+}
+.vote-container .vote-box .vote-outer div p {
   display: block;
   margin: auto;
   color: #000;
   font-size: 1.6rem;
-  font-size: 1.6rem; }
-
-.vote-box span {
+}
+.vote-container .vote-box .vote-outer span {
   float: left;
   height: 24%;
   width: 100%;
@@ -160,27 +169,30 @@ body {
   text-align: center;
   color: #fff;
   vertical-align: middle;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
+
+.vote-box div {
+  display: flex;
+  float: left;
+  height: 75%;
+  width: 100%;
+  background-color: #F5C97B;
+}
 
 /*四小选项图标 start--*/
 .vote-box ul {
-  width: 100%; }
-
-.vote-box .actions {
+  width: 100%;
+}
+.vote-box ul .actions {
   float: left;
-  margin-top: 14.5%;
+  margin-top: 13%;
   display: inline-block;
   width: 21.5%;
   text-align: center;
   cursor: pointer;
-  visibility: hidden; }
-
-.vote-container .vote-box:hover .actions {
-  /*具体玩家投票区*/
-  visibility: visible; }
-
-.vote-box .off-left {
-  margin-left: 4.6%; }
+  visibility: hidden;
+}
 
 /*footer section start---------------------------------*/
 .footer {
@@ -190,26 +202,28 @@ body {
   left: 0;
   width: 100%;
   height: 17%;
-  background-color: #29BDE0; }
-
+  background-color: #29BCDF;
+}
 .footer .vote-btn {
   margin: auto;
   width: 77%;
   height: 46.3%;
   background-color: #FBB435;
-  color: #FFFFFf;
-  cursor: pointer; }
-
+  color: white;
+  cursor: pointer;
+}
 .footer .vote-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
   margin: 0 auto;
   font-size: 2.5rem;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  color: white;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  -ms-transform: translate3d(-50%, -50%, 0);
+  -o-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
 
 /*# sourceMappingURL=page2.css.map */
